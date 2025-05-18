@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sekretesspolicy för Hippy</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            max-width: 800px;
+            margin: auto;
+            padding: 20px;
+            line-height: 1.6;
+            color: #333;
+            background-color: #fff;
+        }
+        h1 {
+            color: #697394;
+            text-align: center;
+            margin-bottom: 30px;
+            font-size: 40px;
+        }
+        h2 {
+            color: #333;
+            border-bottom: 2px solid #697394;
+            padding-bottom: 5px;
+            margin-top: 20px;
+        }
+        p {
+            margin: 10px 0;
+        }
+        ul {
+            list-style-type: disc;
+            margin-left: 20px;
+        }
+        .tabs {
+            display: flex;
+            justify-content: center;
+            margin-bottom: 20px;
+            gap: 20px;
+        }
+        .tab {
+            padding: 10px 15px;
+            background-color: #f4f4f9;
+            color: #697394;
+            text-decoration: none;
+            border: 2px solid #697394;
+            border-radius: 10px 10px 0 0;
+            font-weight: bold;
+            transition: background-color 0.3s ease, color 0.3s ease;
+        }
+        .tab:hover {
+            background-color: #697394;
+            color: white;
+        }
+        .tab:active {
+            background-color: #5a637d;
+            color: white;
+        }
+        .tab.active {
+            background-color: #697394;
+            color: white;
+            cursor: default;
+        }
+    </style>
+</head>
+<body>
+
+    <div style="display: flex; justify-content: flex-end; align-items: center; margin-bottom: 10px;">
+        <select id="lang-select" style="padding: 6px 12px; border-radius: 6px; border: 1px solid #697394; color: #333;">
+            <option value="sv" selected>Svenska</option>
+            <option value="en">English</option>
+        </select>
+    </div>
+    <script>
+        document.getElementById('lang-select').addEventListener('change', function() {
+            if (this.value === 'en') {
+                window.location.href = 'privacy-policy.html';
+            } else {
+                window.location.href = 'privacy-policy-sv.html';
+            }
+        });
+    </script>
+
+    <header style="border-bottom: 2px solid #697394; padding-bottom: 10px; margin-bottom: 20px;">
+        <div class="tabs">
+            <a href="index-sv.html" class="tab">Om</a>
+            <a href="privacy-policy-sv.html" class="tab active">Sekretesspolicy</a>
+            <a href="contact-sv.html" class="tab">Kontakt</a>
+            <a href="apk-download-sv.html" class="tab">Ladda ner APK</a>
+        </div>
+    </header>
+
+    <h1>Sekretesspolicy för Hippy</h1>
+
+    <p>Din integritet är viktig för oss! Denna sekretesspolicy förklarar hur vi samlar in, använder och skyddar de uppgifter du lämnar när du använder Hippy.</p>
+
+    <h2>1. Datainsamling</h2>
+    <p>Vi samlar inte in eller lagrar någon personlig information såsom namn, e-postadresser eller annan identifierbar data. Den enda informationen som lagras på våra servrar är data relaterad till spelstatus, inklusive:</p>
+    <ul>
+        <li>Spelarnamn (ett nytt namn väljs för varje spelomgång)</li>
+        <li>Spelstatistik och spelprogression (t.ex. poäng, spelstatus)</li>
+        <li>Information om minsta appversion och aktuell servertid</li>
+    </ul>
+    <p>Denna data används enbart för att stödja spelets funktionalitet och förbättra din spelupplevelse.</p>
+
+    <h2>2. Kraschstatistik</h2>
+    <p>För att förbättra appens prestanda och stabilitet samlar vi in anonym kraschstatistik. Denna data hjälper oss att identifiera och åtgärda problem i appen för att förbättra användarupplevelsen. Ingen personlig information samlas in via kraschstatistik.</p>
+
+    <h2>3. Hur vi använder insamlad data</h2>
+    <p>Den data vi samlar in används endast för att:</p>
+    <ul>
+        <li>Möjliggöra spelfunktioner, såsom att spara spelprogression och inställningar.</li>
+        <li>Säkerställa att din appversion är uppdaterad.</li>
+        <li>Förbättra spelet baserat på generell användardata.</li>
+        <li>Lösa appkrascher och förbättra stabiliteten.</li>
+    </ul>
+    <p>Vi säljer, delar eller gör inte din data tillgänglig för tredje part.</p>
+
+    <h2>4. Dataskydd</h2>
+    <p>Vi vidtar rimliga tekniska och organisatoriska åtgärder för att skydda den data som lagras på våra servrar. Ingen metod för överföring via internet eller elektronisk lagring är dock 100% säker, och vi kan inte garantera absolut säkerhet för din data.</p>
+
+    <h2>5. Barn och användardata</h2>
+    <p>Vår app är tillgänglig för barn under 13 år, men appen är inte primärt utformad för användare under 13. Vi samlar inte in personlig eller känslig information från några användare, inklusive barn under 13 år. Om vi blir medvetna om att vi oavsiktligt har samlat in personlig information från ett barn under 13 år kommer vi att vidta åtgärder för att radera denna information.</p>
+
+    <h2>6. Ändringar i denna sekretesspolicy</h2>
+    <p>Vi förbehåller oss rätten att uppdatera denna sekretesspolicy. Eventuella ändringar kommer att publiceras här, och vi uppmuntrar dig att regelbundet granska denna policy för att hålla dig informerad om hur vi skyddar din information.</p>
+
+    <h2>Kontakt</h2>
+    <p>Om du har frågor om denna sekretesspolicy eller hur vi hanterar din data, vänligen kontakta oss på <a href="mailto:niclas.jernberg97@gmail.com">niclas.jernberg97@gmail.com</a>.</p>
+
+</body>
+</html>
